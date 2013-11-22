@@ -54,7 +54,8 @@ describe("About Objects", function () {
       meglomaniac = { 
         mastermind: "The Monarch", 
         henchwoman: "Dr Girlfriend",
-        theBomb: true
+        theBomb: true,
+        theDetonator: true
       };
     });
 
@@ -62,14 +63,14 @@ describe("About Objects", function () {
 
       var hasBomb = "theBomb" in meglomaniac;
      
-      expect(hasBomb).toBe(FILL_ME_IN);
+      expect(hasBomb).toBe(meglomaniac.theBomb);
     });
 
     it("should not have the detonator however", function () {
 
       var hasDetonator = "theDetonator" in meglomaniac;
      
-      expect(hasDetonator).toBe(FILL_ME_IN);
+      expect(hasDetonator).toBe(meglomaniac.theDetonator);
     });    
   });
 
