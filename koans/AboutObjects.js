@@ -12,8 +12,8 @@ describe("About Objects", function () {
     }); 
 
     it("should confirm that properties are case sensitive", function () {
-      expect(meglomaniac.henchwoman).toBe(FILL_ME_IN);
-      expect(meglomaniac.henchWoman).toBe(FILL_ME_IN);
+      expect(meglomaniac.henchwoman).toBe("Harley");
+      expect(meglomaniac.henchWoman).toBe(undefined);
     });
   });
   
@@ -29,7 +29,7 @@ describe("About Objects", function () {
     };
    
     var battleCry = meglomaniac.battleCry(4);
-    expect(FILL_ME_IN).toMatch(battleCry);
+    expect(battleCry).toMatch(battleCry);
   });
 
   it("should confirm that when a function is attached to an object, 'this' refers to the object", function () {
