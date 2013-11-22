@@ -21,7 +21,7 @@ describe("About Functions", function() {
       return message;
     }
     
-    expect(getMessage()).toBe(FILL_ME_IN);
+    expect(getMessage()).toBe("3");
     expect(overrideMessage()).toBe(FILL_ME_IN);
     expect(message).toBe(FILL_ME_IN);
   });
